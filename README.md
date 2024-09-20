@@ -18,15 +18,14 @@ Xianjing_Huang_Mini_Proj_2/
 │       └── test.yml
 ├── imgs/
 ├── .gitignore
-├── data_intro.png
+├── describe.png
 ├── main.py
 ├── Makefile
-├── medals_histogram_plot.png
-├── medals_pie_chart_plot.png
-├── olympics2024.csv
 ├── README.md
-├── repport.pdf
+├── report.pdf
 ├── requirements.txt
+├── Salary_dataset.csv
+├── scatter_line_plot.png
 └── test_main.py
 ```
 
@@ -36,32 +35,34 @@ Xianjing_Huang_Mini_Proj_2/
 * Generate summary statistics (mean, median, standard deviation)
 * Create at least one data visualization
 
+### Polars vs Pandas
+* Polars generally outperforms Pandas in terms of speed, especially for large datasets. This is because Polars is designed for parallelized execution and is optimized for in-memory performance.
+* Pandas may still be more familiar or convenient for certain smaller tasks or when using legacy systems that require it.
+
+
 ### Preparation
 1. Open codespaces
 2. Wait for container to be built and pinned requirements from `requirements.txt` to be installed
 3. If running locally, `git clone` the repository and use `make install`
-![1](/imgs/001.png)
+![0](/imgs/000.png)
 
 ### Check format and test errors
 1. Format code `make format`
-![3](/imgs/003.png)
+![1](/imgs/001.png)
 2. Lint code `make lint`
-![4](/imgs/004.png)
-3. Test code `make test`
 ![2](/imgs/002.png)
+3. Test code `make test`
+![3](/imgs/003.png)
 
 ### Descriptive Statistics
-![0](/imgs/000.png)
+![4](/imgs/004.png)
 
 ### Visualization
-1. Histogram
-![5](/medals_histogram_plot.png)
-2. Pie Chart
-![6](/medals_pie_chart_plot.png)
+![6](/scatter_line_plot.png)
 
 ### Report
 Generated summary report (PDF) via CI/CD for extra credit.
-![7](/imgs/005.png)
+![5](/imgs/005.png)
 You can find it here [Report](/report.pdf)
 
 

@@ -7,12 +7,16 @@ def read_data(file):
     """read .csv dataset by polars"""
     return pl.read_csv(file)
 
+
 df = read_data("Salary_dataset.csv")
+
 
 def generate_summary_statistics(df):
     return df.describe()
 
+
 print(generate_summary_statistics(df))
+
 
 def compute_summary_statistics(df):
     """compute mean, median, standard deviation"""
@@ -35,22 +39,26 @@ def compute_summary_statistics(df):
     print("-------------")
     return
 
+
 compute_summary_statistics(df)
+
 
 def draw_scatter_line_plot(df):
     """create scatter_line_plot for df and save fig"""
     plt.figure(figsize=(8, 6))
-    plt.scatter(df['YearsExperience'], df['Salary'], color='blue', label='Data Points')
-    plt.plot(df['YearsExperience'], df['Salary'], color='orange', label='Trend Line')
-    plt.title('Years of Experience vs Salary')
-    plt.xlabel('Years of Experience')
-    plt.ylabel('Salary')
+    plt.scatter(df["YearsExperience"], df["Salary"], color="blue", label="Data Points")
+    plt.plot(df["YearsExperience"], df["Salary"], color="orange", label="Trend Line")
+    plt.title("Years of Experience vs Salary")
+    plt.xlabel("Years of Experience")
+    plt.ylabel("Salary")
     plt.grid(True)
     plt.legend()
     # plt.show()
     plt.savefig("scatter_line_plot.png")
 
+
 draw_scatter_line_plot(df)
+
 
 def generate_PDF(df):
     """create PDF and save"""
@@ -73,7 +81,7 @@ def generate_PDF(df):
         "Columns: \n"
         "# \n"
         "YearsExperience \n"
-        "Salary \n" 
+        "Salary \n"
         "Data source: "
     )
     pdf.multi_cell(0, 10, txt=content_part1)
@@ -93,7 +101,7 @@ def generate_PDF(df):
         align="L",
         link="https://www.kaggle.com/datasets/abhishek14398/salary-dataset-simple-linear-regression/data",
     )
-    
+
     pdf.ln(10)
 
     # part2: descriptive statistics
@@ -119,5 +127,6 @@ def generate_PDF(df):
 
     # save PDF
     pdf.output("report.pdf", "F")
+
 
 generate_PDF(df)
