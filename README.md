@@ -1,8 +1,8 @@
 # Xianjing_Huang_Mini_Proj_2
-[![Lint](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/lint.yml/badge.svg)](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/lint.yml)
-[![Format](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/format.yml/badge.svg)](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/format.yml)
-[![Install](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/install.yml/badge.svg)](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/install.yml)
-[![Test](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/test.yml/badge.svg)](https://github.com/Remi12138/Xianjing_Huang_Mini_Proj_2/actions/workflows/test.yml)
+[![Lint](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/lint.yml)
+[![Install](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/install.yml)
+[![Format](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/format.yml)
+[![Test](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Xianjing_Huang_Mini_Proj_3/actions/workflows/test.yml)
 
 ### Directory Tree Structure
 ```
