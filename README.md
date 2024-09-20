@@ -6,7 +6,7 @@
 
 ### Directory Tree Structure
 ```
-Xianjing_Huang_Mini_Proj_2/
+Xianjing_Huang_Mini_Proj_3/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
