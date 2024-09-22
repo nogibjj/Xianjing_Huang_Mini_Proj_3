@@ -1,11 +1,18 @@
 from main import read_data, generate_summary_statistics, compute_summary_statistics
-from main import draw_scatter_line_plot, generate_PDF
+from main import draw_scatter_line_plot, generate_PDF, read_data_pd
+from pyinstrument import Profiler
 import polars as pl
+import pandas as pd
 
 
 def test_read_data():
     df = read_data("Salary_dataset.csv")
     assert isinstance(df, pl.DataFrame), "Failed to read CSV dataset"
+
+
+def test_read_data_pd():
+    df = read_data_pd("Salary_dataset.csv")
+    assert isinstance(df, pd.DataFrame), "Failed to read CSV dataset"
 
 
 def test_generate_summary_statistics():
@@ -38,3 +45,13 @@ if __name__ == "__main__":
     test_compute_summary_statistics()
     test_draw_scatter_line_plot()
     test_generate_PDF()
+    with Profiler(interval=0.1) as profiler:
+        df = read_data("Salary_dataset.csv")
+        print(df.shape)
+        print(df.describe())
+    profiler.print()
+    with Profiler(interval=0.1) as profiler:
+        df = read_data_pd("Salary_dataset.csv")
+        print(df.shape)
+        print(df.describe())
+    profiler.print()
