@@ -36,7 +36,7 @@ Xianjing_Huang_Mini_Proj_3/
 * Create at least one data visualization
 
 ### Polars vs Pandas
-* I use Profiler from pyinstrument to compare Polars & Pandas. For my dataset, Polars took 0.001s while Pandas took 0.012s. (details see in [Report](/report.pdf))
+* I use Profiler from pyinstrument to compare Polars & Pandas for extra credit. For my dataset, Polars took 0.001s while Pandas took 0.012s. (details see in [Report](/report.pdf))
 * Polars generally outperforms Pandas in terms of speed, especially for large datasets. This is because Polars is designed for parallelized execution and is optimized for in-memory performance.
 * Pandas may still be more familiar or convenient for certain smaller tasks or when using legacy systems that require it.
 
